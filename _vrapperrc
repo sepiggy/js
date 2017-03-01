@@ -1,0 +1,38 @@
+inoremap jk <esc>
+nnoremap ; :
+set clipboard+=unnamed
+set cursorline
+set number
+set foldmethod=indent
+" 设置leader键
+let mapleader="\<space>"
+
+" 设置localleader键
+let maplocalleader="\\"
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap <m-j> :resize +5<cr>
+nnoremap <m-k> :resize -5<cr>
+nnoremap <m-h> :vertical resize -5<cr>
+nnoremap <m-l> :vertical resize +5<cr>
+nnoremap j jzz
+nnoremap k kzz
+nnoremap - <esc>ddp
+nnoremap _ <esc>ddkp
+nnoremap vv ^vg_
+nnoremap H g^
+nnoremap L g$
+nnoremap Y y$
+" 在资源管理器中打开当前目录
+nnoremap <silent> <leader>ex :!start explorer %:P:H<cr>
+
+" 在 cmd 中打开当前目录
+nnoremap <silent> <leader>cmd :!start cmd /k cd %:p:h<cr>
+
+" 打印当前时间
+nnoremap <F3> A<c-r>=STRFTIME("%y-%M-%D %a %I:%M %p")<cr><esc>
+
+" 高亮显示关键字后再按 Enter 键取消高亮
+nnoremap <silent> <cr> :noh<cr>

@@ -1,0 +1,12 @@
+inoremap jk <esc>
+nnoremap ; :
+nnoremap <cr> :noh<cr>
+nnoremap x :tabc<cr>
+command -nargs=* google open google <args>
+qmark b www.baidu.com
+qmark d www.douban.com
+qmark g www.google.com
+qmark G www.github.com
+qmark z www.zhihu.com
+
+
