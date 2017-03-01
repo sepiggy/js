@@ -30,3 +30,5 @@ ntuser.ini
 .minttyrc
 IdeaProjects/
 Vimperator/
+.dnx/
+IntelGraphicsProfiles/
