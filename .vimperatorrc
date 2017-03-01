@@ -5,8 +5,15 @@ nnoremap x :tabc<cr>
 command -nargs=* google open google <args>
 qmark b www.baidu.com
 qmark d www.douban.com
-qmark g www.google.com
+qmark f www.pomotodo.com
+qmark g www.google.com/ncr
 qmark G www.github.com
+qmark j www.jd.com
+qmark o http://oa.people.lo
+qmark s www.smzdm.com
+qmark t www.taobao.com
+qmark v http://v.qq.com
+qmark y www.youku.com
 qmark z www.zhihu.com
 
 
