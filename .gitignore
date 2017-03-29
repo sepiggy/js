@@ -31,3 +31,5 @@ ntuser.ini
 IdeaProjects/
 Vimperator/
 .gradle
+.dnx/
+IntelGraphicsProfiles/
