@@ -1,3 +1,10 @@
 [user]
 	email = jms1209@qq.com
 	name = sepiggy
+[alias]
+	ss = status -s
+	cg = config --global
+	st = status
+	pom = push origin master
+	cm = commit -m
+	cl = config --list
