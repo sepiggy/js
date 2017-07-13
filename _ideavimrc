@@ -1,0 +1,124 @@
+" 设置 leader 键为空格键
+let mapleader=' '
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set number
+set relativenumber
+set scrolloff=3
+" 开启支持 vim-surround 特性 
+set surround
+
+" 保存 1024 个命令和 1024 个查找模式的历史
+set history=1024
+
+" Vim 的默认寄存器和系统剪贴板共享
+set clipboard+=unnamed 
+
+" 高亮显示关键字后再按 Enter 键取消高亮
+nnoremap <cr> :nohlsearch<cr>
+
+" Insert mode shortcut
+inoremap jk <esc>
+inoremap <C-b> <Left>
+inoremap <C-n> <Down>
+inoremap <C-p> <Up>
+inoremap <C-f> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-d> <Delete>
+
+nnoremap j jzz
+nnoremap k kzz
+nnoremap H ^
+nnoremap L $
+nnoremap U <c-r>
+nnoremap Y y$
+nnoremap ; :
+
+" 标签页操作
+nnoremap tn gt
+nnoremap tp gT
+
+"""" idea action 配置 """"
+" nnoremap <leader>j :action emacsIDEAs.AceJump<cr>
+" nnoremap f :action emacsIDEAs.AceJump<cr>
+
+" File
+nnoremap <leader>ne :action NewElement<cr>
+nnoremap <leader>np :action NewProject<cr>
+nnoremap <leader>nm :action NewModule<cr>
+nnoremap <leader>nf :action NewFile<cr>
+nnoremap <leader>nh :action NewHtmlFile<cr>
+nnoremap <leader>nj :action NewJavaScriptFile<cr>
+nnoremap <leader>ns :action NewScratchFile<cr>
+nnoremap <leader>nc :action NewClass<cr>
+nnoremap <leader>nd :action NewDir<cr>
+nnoremap <leader>npi :action NewPackageInfo<cr>
+
+nnoremap <leader>ca :action CloseAllEditors<cr>
+nnoremap <leader>co :action CloseAllEditorsButActive<cr>
+nnoremap <leader>cp: action CloseProject<cr>
+
+nnoremap <leader>of :action OpenFile<cr>
+nnoremap <leader>ob :action OpenInBrowser<cr>
+
+" Edit
+nnoremap / :action Find<cr>
+" nnoremap fp :action FindInPath<cr>
+" nnoremap fu :action FindUsages<cr>
+" nnoremap fuf :action FindUsagesInFile<cr>
+
+nnoremap <Leader>su :action ShowUsages<CR>
+
+" View
+nnoremap <leader>vd :action ActivateDebugToolWindow<cr>
+nnoremap <leader>vr :action ActivateRunToolWindow<cr>
+nnoremap <leader>vf :action ActivateFindToolWindow<cr>
+nnoremap <leader>vm :action ActivateMavenProjectsToolWindow<cr>
+nnoremap <leader>vt :action ActivateTerminalToolWindow<cr>
+nnoremap <leader>vv :action ChangeView<cr>
+
+" Navigate
+nnoremap <leader>gc :action GotoClass<cr>
+nnoremap <leader>gf :action GotoFile<cr>
+nnoremap <leader>ga :action GotoAction<cr>
+nnoremap <leader>gi :action GotoImplementation<cr>
+nnoremap <leader>gd :action GotoDeclaration<cr>
+nnoremap <leader>gs :action GotoSuperMethod<cr>
+nnoremap <leader>gt :action GotoTest<cr>
+nnoremap <leader>gl :action GotoLine<cr>
+nnoremap <leader>gt :action GotoTypeDeclaration<cr>
+nnoremap <Leader>tc  :action CloseActiveTab<CR>
+
+" Code
+nnoremap <leader>om :action OverrideMethods<cr>
+nnoremap <leader>oi :action OptimizeImports<cr>
+nnoremap <leader>gg :action Generate<cr>
+nnoremap <leader>cc :action CommentByLineComment<cr>
+
+" Refactor
+nnoremap <leader>rl :action Refactorings.QuickListPopupAction<cr>
+nnoremap <leader>mm :action Move <cr>
+nnoremap <leader>rf :action RenameFile<cr>
+nnoremap <leader>re :action RenameElement<cr>
+noremap <Space>dfj :action IntroduceVariable<CR>
+noremap <Space>dfk :action ExtractMehtod<CR>
+noremap <Space>dfl :action Inline<CR>
+noremap <Space>dfu :action ChangeSignature<CR>
+noremap <Space>dfo :action MembersPullUp<CR>
+
+" Run
+nnoremap <leader>rc :action ChooseRunConfiguration<cr>
+nnoremap <leader>dc :action ChooseDebugConfiguration<cr>
+nnoremap <leader>bb :action ToggleLineBreakpoint<cr>
+nnoremap <leader>bv :action ViewBreakpoints<cr>
+
+nnoremap <Leader>ic :action InspectCode<CR>
+
+nnoremap <Leader>pm :action ShowPopupMenu<CR>
+
+nnoremap <Leader>sfp :action ShowFilePath<cr>

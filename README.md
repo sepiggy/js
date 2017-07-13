@@ -1,18 +1,16 @@
 # 用户目录js/下的配置文件
 
-.gitconfig是Git的配置文件
-
-_vimrc是Windows下Vim的配置文件
-
-_vrapperrc是Eclipse下Vim插件的配置文件
-
-.ideavimrc是IDEA下Vim插件的配置文件
-
-.vimperatorrc是Firefox下Vim插件的配置文件
-
-.m2/目录下是Maven的配置文件
-
-
+| 名字               | 谁的配置文件        | 平台                  |
+| ---------------- | ------------- | ------------------- |
+| .gitconfig       | Git           | Windows, Mac, Linux |
+| _vimrc           | Vim           | Windows             |
+| _vrapperrc       | Eclipse的Vim插件 | Windows             |
+| _ideavimrc       | IDEA的Vim插件    | Windows             |
+| .vimperatorrc    | Firefox的Vim插件 | Windows, Mac, Linux |
+| .m2/settings.xml | Maven         | Windows, Mac, Linux |
+| .zshrc           | zsh           | Windows, Mac, Linux |
+| .babunrc         | babun         | Windows, Mac, Linux |
+|                  |               |                     |
 
 
 
